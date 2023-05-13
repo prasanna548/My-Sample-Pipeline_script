@@ -9,7 +9,7 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/prasanna548/sample2.git']])
             }
         }
-        stage('2') {
+        stage('test_Camera') {
             steps {
                 echo 'Hello World 2'
             }
